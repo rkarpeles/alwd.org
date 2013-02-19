@@ -8,3 +8,12 @@ Template:       Relief
 */
 
 @import url("../Relief/style.css");
+
+img { 
+  max-width: 100%;
+  height: auto; }
+
+.wp-caption-text {
+  font-style: italic;
+  font-size: 13px; }
+  
