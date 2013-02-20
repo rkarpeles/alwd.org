@@ -28,29 +28,27 @@ Template:       Relief
    --------------------------------------------- */
 
 /* 
- * Force all elements to maintain their width regardless of 
+ * Force all images to maintain their width regardless of 
  * padding, border, etc. More info here:
  * http://css-tricks.com/box-sizing/
  * http://paulirish.com/2012/box-sizing-border-box-ftw/
  */
-* {
+img { 
+  max-width: 100%; /* Constrain image width to size of parent container for responsive layout. */
+  height: auto;
   -webkit-box-sizing: border-box; 
      -moz-box-sizing: border-box;
-          box-sizing: border-box; } 
-
-/*
- * Constrain image width to size of parent container for responsive layout.
- */
-img { 
-  max-width: 100%;
-  height: auto; }
+          box-sizing: border-box; }
 
 
 /* ---------------------------------------------
    2.0 - $Typography
    --------------------------------------------- */
 
-
+h3 { margin: 0 0 15px 0; }
+h6 { line-height: 1.4; }
+  
+.title2 { line-height: 1.2; }
 
 	
 /* ---------------------------------------------
@@ -85,18 +83,23 @@ img {
 ------------------------------------------------ */  
 #content ol li { 
   list-style: decimal;
-  margin-left: 3em;}
-
-#content ol li { 
+  margin-left: 3em;
   border-bottom: none;
   padding: 0; }
 
+#content ul li { 
+  list-style: disc;
+  margin-left: 3em;
+  border-bottom: none;
+  padding: 0; }
+
+#content .widget ul li { 
+  list-style-image: url(/alwd.org/wp-content/themes/Relief/images/list1.png);
+  margin-left: 0;
+  border-bottom: #dee0e0 1px solid;
+  padding: 3px 0 3px 0; }
 
 
 
 
-
-
-
-
-  
+ 
