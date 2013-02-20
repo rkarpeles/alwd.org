@@ -94,7 +94,7 @@ h6 { line-height: 1.4; }
   padding: 0; }
 
 #content .widget ul li { 
-  list-style-image: url(/alwd.org/wp-content/themes/Relief/images/list1.png);
+  list-style-image: url('../Relief/images/list1.png');
   margin-left: 0;
   border-bottom: #dee0e0 1px solid;
   padding: 3px 0 3px 0; }
