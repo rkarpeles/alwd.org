@@ -48,6 +48,10 @@ h6 { line-height: 1.4; }
   
 .title2 { line-height: 1.2; }
 
+.wp-caption-text {
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 10px; }
 	
 /* ---------------------------------------------
    3.0 - $Helper Classes
@@ -97,6 +101,7 @@ h6 { line-height: 1.4; }
   border-bottom: #dee0e0 1px solid;
   padding: 3px 0 3px 0; }
 
+.nested-sb { margin-left: 1em; }
 
 
 
