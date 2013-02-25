@@ -38,7 +38,6 @@ img {
      -moz-box-sizing: border-box;
           box-sizing: border-box; }
 
-
 /* ---------------------------------------------
    2.0 - $Typography
    --------------------------------------------- */
@@ -66,7 +65,6 @@ h6 { line-height: 1.4; }
 .bot-mar-6 { margin-bottom: 1.5em; }
 .bot-mar-7 { margin-bottom: 1.75em; }
 .bot-mar-8 { margin-bottom: 2em; }
-
 
 /* ---------------------------------------------
    4.0 - $Theme Styles
@@ -102,7 +100,3 @@ h6 { line-height: 1.4; }
   padding: 3px 0 3px 0; }
 
 .nested-sb { margin-left: 1em; }
-
-
-
- 
