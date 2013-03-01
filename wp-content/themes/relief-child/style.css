@@ -34,6 +34,8 @@ Template:       Relief
 img { 
   max-width: 100%; /* Constrain image width to size of parent container for responsive layout. */
   height: auto;
+  border: 1px solid #dee0e0;
+  padding: 3px;
   -webkit-box-sizing: border-box; 
      -moz-box-sizing: border-box;
           box-sizing: border-box; }
@@ -41,6 +43,9 @@ img {
 /* ---------------------------------------------
    2.0 - $Typography
    --------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
 
 h3 { margin: 0 0 15px 0; }
 h6 { line-height: 1.4; }
@@ -51,6 +56,10 @@ h6 { line-height: 1.4; }
   font-size: 12px;
   font-style: italic;
   margin-bottom: 10px; }
+
+#title h1, #tagline { font-weight: normal; }
+
+#title h1 { font-size: 32px; }
 	
 /* ---------------------------------------------
    3.0 - $Helper Classes
@@ -79,6 +88,11 @@ h6 { line-height: 1.4; }
 .img-border-2 { padding: 3px; }
 .img-border-3 { padding: 5px; }
 
+/* No border on slider or carousel images */
+.slider img, .jcarousel-container img { 
+  border: 0;
+  padding: 0; }
+
 /* $Lists
    --------------------------------------------- */  
 #content ol li { 
@@ -100,3 +114,19 @@ h6 { line-height: 1.4; }
   padding: 3px 0 3px 0; }
 
 .nested-sb { margin-left: 1em; }
+
+/* $Accordion
+   --------------------------------------------- */  
+.accordion h4 {
+  text-transform: none;
+  padding: 12px 0 12px 55px; }
+
+/* $Buttons
+   --------------------------------------------- */ 
+
+.button1, #footer .button1, .button2, .button3, #submit {
+	border: #dadada 1px solid; }
+
+
+
+

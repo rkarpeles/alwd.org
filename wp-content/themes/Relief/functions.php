@@ -740,6 +740,21 @@ function donate_position() {
 }
 
 
+/* ------------------------------------------------
+	Superscript, Subscript and Horizontal Rule Buttons to WYSIWYG Editor
+------------------------------------------------ */
+
+function enable_more_buttons($buttons) {
+  $buttons[] = 'hr';
+  $buttons[] = 'sub';
+  $buttons[] = 'sup';
+  $buttons[] = 'anchor';
+  $buttons[] = 'small';
+  
+  return $buttons;
+}
+add_filter("mce_buttons_3", "enable_more_buttons"); 
+
 
 /* ------------------------------------------------
 	Google Fonts
