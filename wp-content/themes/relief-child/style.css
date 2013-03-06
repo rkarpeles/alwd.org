@@ -19,6 +19,7 @@ Template:       Relief
  * 2.0 - Typography
  * 3.0 - Helper Classes
  * 4.0 - Theme Styles
+ * 5.0 - Responsive
  */
 
 /* ---------------------------------------------
@@ -49,6 +50,23 @@ h1, h2, h3, h4, h5, h6 {
 
 h3 { margin: 0 0 15px 0; }
 h6 { line-height: 1.4; }
+
+/**
+ * Prevent sub and sup affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+small { font-size: 80%; }
   
 .title2 { line-height: 1.2; }
 
@@ -113,6 +131,18 @@ h6 { line-height: 1.4; }
   border-bottom: #dee0e0 1px solid;
   padding: 3px 0 3px 0; }
 
+#content #tabs ul li { 
+  list-style: none;
+  margin-left: 0;
+  border-bottom: none;
+  padding: 0; }
+
+.ui-tabs .ui-tabs-nav li a { 
+	float: left; 
+	padding: 6px 5px; 
+	text-decoration: none;
+	border-right: #dee0e0 1px solid; }
+
 .nested-sb { margin-left: 1em; }
 
 /* $Accordion
@@ -127,6 +157,16 @@ h6 { line-height: 1.4; }
 .button1, #footer .button1, .button2, .button3, #submit {
 	border: #dadada 1px solid; }
 
+/* ---------------------------------------------
+   5.0 - $Responsive
+   --------------------------------------------- */
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+}
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 200px) and (max-width: 479px) {
+}
 
 
