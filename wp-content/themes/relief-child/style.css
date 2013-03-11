@@ -187,6 +187,10 @@ small { font-size: 80%; }
 .button1, #footer .button1, .button2, .button3, #submit {
 	border: #dadada 1px solid; }
 
+/* $Tables
+   --------------------------------------------- */ 
+.table-half-width { width: 50%; }
+
 /* ---------------------------------------------
    5.0 - $Responsive
    --------------------------------------------- */
@@ -210,6 +214,7 @@ small { font-size: 80%; }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 479px) {
+  .table-half-width { width: 100%; }
 }
 
 

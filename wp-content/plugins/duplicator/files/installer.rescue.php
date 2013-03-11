@@ -84,8 +84,8 @@ if (file_exists('dtoken.php')) {
 $GLOBALS['FW_TABLEPREFIX'] 	= 'wp_';
 $GLOBALS['FW_URL_OLD'] 		= 'http://localhost/alwd.org';
 $GLOBALS['FW_URL_NEW'] 		= '';
-$GLOBALS['FW_PACKAGE_NAME'] = '5137962f0fc0e8774_20130306_alwd_package.zip';
-$GLOBALS['FW_SECURE_NAME'] 	= '5137962f0fc0e8774_20130306_alwd';
+$GLOBALS['FW_PACKAGE_NAME'] = '513dff1d6e03f1546_20130311_alwd_package.zip';
+$GLOBALS['FW_SECURE_NAME'] 	= '513dff1d6e03f1546_20130311_alwd';
 $GLOBALS['FW_DBHOST'] 		= 'localhost';
 $GLOBALS['FW_DBNAME'] 		= '';
 $GLOBALS['FW_DBUSER'] 		= '';
