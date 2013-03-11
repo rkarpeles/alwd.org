@@ -741,19 +741,34 @@ function donate_position() {
 
 
 /* ------------------------------------------------
-	Superscript, Subscript and Horizontal Rule Buttons to WYSIWYG Editor
+	Add additional buttons to the WYSIWYG Editor
 ------------------------------------------------ */
 
 function enable_more_buttons($buttons) {
   $buttons[] = 'hr';
+  $buttons[] = 'del';
   $buttons[] = 'sub';
   $buttons[] = 'sup';
   $buttons[] = 'anchor';
   $buttons[] = 'small';
+  $buttons[] = 'fontsizeselect';
   
   return $buttons;
 }
 add_filter("mce_buttons_3", "enable_more_buttons"); 
+
+
+// Add custom text sizes in the font size drop down list of the rich text editor (TinyMCE) in WordPress
+// $initArray is a variable of type array that contains all default TinyMCE parameters.
+// Value 'theme_advanced_font_sizes' needs to be added, if an overwrite to the default font sizes in the list, is needed.
+
+function customize_text_sizes($initArray){
+   $initArray['theme_advanced_font_sizes'] = "11px,12px,14px,16px,18px";
+   return $initArray;
+}
+
+// Assigns customize_text_sizes() to "tiny_mce_before_init" filter
+add_filter('tiny_mce_before_init', 'customize_text_sizes');
 
 
 /* ------------------------------------------------

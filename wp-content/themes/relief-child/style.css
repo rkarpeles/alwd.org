@@ -57,7 +57,7 @@ h6 { line-height: 1.4; }
 
 sub,
 sup {
-    font-size: 75%;
+    font-size: 70%;
     line-height: 0;
     position: relative;
     vertical-align: baseline; }
@@ -113,6 +113,8 @@ small { font-size: 80%; }
 
 /* $Lists
    --------------------------------------------- */  
+.inline li { display: inline; }
+
 #content ol li { 
   list-style: decimal;
   margin-left: 3em;
@@ -144,6 +146,34 @@ small { font-size: 80%; }
 	border-right: #dee0e0 1px solid; }
 
 .nested-sb { margin-left: 1em; }
+
+#main-menu li li a, #main-menu li.sfHover li a {
+	background:	#b20707 !important; }
+
+#main-menu li li a:hover {
+  background: #800 !important; }
+
+#main-menu li li a {
+  color: #fff !important; }
+
+/* 
+ * Custom menu here:
+ * http://www.alwd.org/publications/legal-communication-rhetoric/
+ */
+
+.jalwd-menu {
+  border-bottom: 1px solid #dee0e0;
+  position: relative;
+  top: -3px; 
+  padding: 0 0 15px 0;}
+
+.jalwd-menu-item {
+  margin: -5px 35px 0 0 !important; }
+	
+.jalwd-menu-item a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline; }
 
 /* $Accordion
    --------------------------------------------- */  
