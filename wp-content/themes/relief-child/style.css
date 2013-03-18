@@ -22,6 +22,7 @@ Template:       Relief
  * 5.0 - Responsive
  */
 
+
 /* ---------------------------------------------
    1.0 - $Base
    --------------------------------------------- */
@@ -40,6 +41,7 @@ img {
   -webkit-box-sizing: border-box; 
      -moz-box-sizing: border-box;
           box-sizing: border-box; }
+
 
 /* ---------------------------------------------
    2.0 - $Typography
@@ -68,6 +70,15 @@ sup, .footnumber { top: -0.5em; }
 sub { bottom: -0.25em; }
 
 small { font-size: 80%; }
+
+.tagline {
+  margin: -15px auto 40px auto;
+  font-size: 1.3725em;
+  line-height: 1.575;
+  text-align: center;
+  font-family: 'Bitter', Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  color: #666; }
   
 .title2 { line-height: 1.2; }
 
@@ -79,6 +90,23 @@ small { font-size: 80%; }
 #title h1, #tagline { font-weight: normal; }
 
 #title h1 { font-size: 32px; }
+
+.blog-title-single { line-height: 1.2; }
+
+.blog-title-single a { 
+  text-decoration: none;
+  color: #424242; }
+
+.blog-title-single a:hover {
+  text-decoration: none !important; }
+		  
+.blog-prev .blog-prev-content h4 {
+  line-height: 1.35; }
+	
+.flex-caption {
+  padding: 10px 18px;
+  background-color: rgba(175, 30, 29, .97) !important; }
+	
 	
 /* ---------------------------------------------
    3.0 - $Helper Classes
@@ -93,6 +121,7 @@ small { font-size: 80%; }
 .bot-mar-6 { margin-bottom: 1.5em; }
 .bot-mar-7 { margin-bottom: 1.75em; }
 .bot-mar-8 { margin-bottom: 2em; }
+
 
 /* ---------------------------------------------
    4.0 - $Theme Styles
@@ -176,6 +205,10 @@ small { font-size: 80%; }
   font-weight: bold;
   text-decoration: underline; }
 
+/* hide post details */
+.blog-title-single h2 span {
+	display: none; }
+
 /* $Accordion
    --------------------------------------------- */  
 .accordion h4 {
@@ -184,14 +217,24 @@ small { font-size: 80%; }
 
 /* $Buttons
    --------------------------------------------- */ 
-
 .button1, #footer .button1, .button2, .button3, #submit {
 	border: #dadada 1px solid; }
+
+/* $Comments
+   --------------------------------------------- */
+/* hide comments on posts */
+.comment-count { display: none; } 
 
 /* $Tables
    --------------------------------------------- */ 
 .table-half-width { width: 50%; }
 
+/* $Slider
+   --------------------------------------------- */ 
+.slider {
+	border-color: #ccc !important; }
+
+  
 /* ---------------------------------------------
    5.0 - $Responsive
    --------------------------------------------- */
@@ -205,17 +248,26 @@ small { font-size: 80%; }
   
   .ui-tabs .ui-tabs-nav li:first-child a {
   border-left: none; }
+  
+  .tagline { 
+	font-size: 1.3em; }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   #tabs .nav li, #tabs .nav li a {
-	    width: 30px;
-		display: block;
-	}
+    width: 30px;
+	display: block;	}
+  
+  .tagline { 
+	display: none; }
+  
 }
 
 @media only screen and (min-width: 200px) and (max-width: 479px) {
   .table-half-width { width: 100%; }
+
+  .tagline { 
+	display: none; }
 }
 
 

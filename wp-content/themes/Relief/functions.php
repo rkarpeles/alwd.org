@@ -267,7 +267,7 @@ function dimox_breadcrumbs() {
     } elseif ( is_author() ) {
        global $author;
       $userdata = get_userdata($author);
-      echo $before . 'Articles posted by ' . $userdata->display_name . $after;
+	  
  
     } elseif ( is_404() ) {
       echo $before . 'Error 404' . $after;
@@ -486,8 +486,9 @@ function shortcode_fix($content)
 ------------------------------------------------ */
 
 function qns_excerpt_length( $length ) {
-	return 25;
+	return 22;	
 }
+
 add_filter( 'excerpt_length', 'qns_excerpt_length' );
 
 

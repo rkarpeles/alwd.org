@@ -46,7 +46,7 @@ Template Name: Blog
 										<?php _e( 'Posted ', 'qns' ) ?>
 										<?php the_time('F j, Y'); ?>
 										<?php the_tags( __(' | Tagged: ','qns'), ', ' ); ?>
-									</span>		
+									</span> 
 								</h3>
 							</div>
 							<div class="comment-count fr">
@@ -74,7 +74,7 @@ Template Name: Blog
 							</a>
 							<?php } ?>
 
-							<?php the_excerpt(); ?>
+							<?php the_excerpt(); ?> 
 						<!-- END .blog-content -->
 						</div>
 
